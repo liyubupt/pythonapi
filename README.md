@@ -15,6 +15,8 @@ Your connection string is something like:
 
 ```
 DRIVER={ODBC Driver 17 for SQL Server};SERVER=<your-server-name>.database.windows.net;DATABASE=<your-database-name>;UID=PythonWebApp;PWD=PLACEHOLDER
+
+$Env:SQLAZURECONNSTR="Driver={ODBC Driver 13 for SQL Server};Server=tcp:synpylizurichpoc.sql.azuresynapse.net,1433;Database=SqlPool;Uid=PythonWebApp;Pwd=PLACEHOLDER;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 ```
 
 To run and test the Python REST API local, just run

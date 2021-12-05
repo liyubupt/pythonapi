@@ -33,7 +33,7 @@ parser = reqparse.RequestParser()
 parser.add_argument('customer')
 
 # Create connection to Azure SQL
-conn = pyodbc.connect(os.environ['SQLAZURECONNSTR_WWIF'])
+conn = pyodbc.connect(os.environ['SQLAZURECONNSTR'])
 
 @app.route('/customer/<customer_id>')
 def get(customer_id): 

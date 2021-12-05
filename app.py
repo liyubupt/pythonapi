@@ -1,12 +1,9 @@
 import sys
 import os
 from flask import Flask, jsonify
-from flask_restful import reqparse, Api, Resource
-from apispec.ext.marshmallow import MarshmallowPlugin
-from marshmallow import Schema, fields
+from flask_restful import reqparse, Api
 import json
 import pyodbc
-from apispec import APISpec
 from flasgger import Swagger
 import logging
 

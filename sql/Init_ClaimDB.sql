@@ -1,3 +1,12 @@
+CREATE SCHEMA [web]
+GO
+
+CREATE USER PythonWebApp FOR LOGIN PythonWebApp;  
+GO 
+
+EXEC sp_addrolemember 'SqlPool', 'PythonWebApp';  
+Go
+
 CREATE TABLE [web].[Claim]
 (
 	[name] [varchar](30) NULL,
